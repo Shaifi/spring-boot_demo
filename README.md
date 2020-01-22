@@ -15,8 +15,10 @@ DTOs are the wrapper objects that are used to wrap the object in our required fo
 This layer holds the major business logic of the application. All the processing and communication with the DB is done through this layer. This layer uses the DB repository beans to access the DB functionality. This layer takes the input in DTO format, processes it, uses CRUD operations through repository or can directly access the entity objects and return the objects in DTO or DAO format. @Service annotation is used for service bean.
 ### Persistence
 This is further divided into 2 parts :
-- model- repository
-* model - Contains the entity models of the database. @Entity annotation is used to define the class as an entity.* repository - Contains the JPA methods to perform operations on DB. @Repository annotation is used define the class to be used as Repository.
+- model
+- repository
+* model - Contains the entity models of the database. @Entity annotation is used to define the class as an entity.
+* repository - Contains the JPA methods to perform operations on DB. @Repository annotation is used define the class to be used as Repository.
 ### application.properties
 This properties file is present in the resources folder and is used to provide the configuration settings for the application like DB configuration.
 ## Run the Project
